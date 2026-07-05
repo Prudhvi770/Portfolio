@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prudhvi | Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- SCROLL PROGRESS -->
+<div id="prog"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="#home" class="nav-logo">Prudhvi<span>_</span></a>
+
+  <ul class="nav-links">
+    <li><a href="#home">01. Home</a></li>
+    <li><a href="#about">02. About</a></li>
+    <li><a href="#expertise">03. Expertise</a></li>
+    <li><a href="#skills">04. Skills</a></li>
+    <li><a href="#projects">05. Projects</a></li>
+    <li><a href="#contact">06. Contact</a></li>
+  </ul>
+
+  <div style="display:flex;align-items:center;gap:16px;">
+    <div class="nav-social">
+      <div class="nav-sep"></div>
+      <a href="https://www.linkedin.com/in/ghattamaneni-prudhvi-03a197326/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+      <a href="https://github.com/Prudhvi770" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">☰</button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home"      onclick="closeMenu()">01. Home</a>
+  <a href="#about"     onclick="closeMenu()">02. About</a>
+  <a href="#expertise" onclick="closeMenu()">03. Expertise</a>
+  <a href="#skills"    onclick="closeMenu()">04. Skills</a>
+  <a href="#projects"  onclick="closeMenu()">05. Projects</a>
+  <a href="#contact"   onclick="closeMenu()">06. Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="home" class="grid-bg">
+  <h1 class="hero-name fade-up">
+    Ghattamaneni<br>
+    <span class="accent">Prudhvi<span style="opacity:.45">_</span></span>
+  </h1>
+  <p class="hero-role fade-up">FULL STACK DEVELOPER</p>
+  <div class="hero-desc fade-up">
+    <div class="hero-bar"></div>
+    <p>I build clear, reliable, and user-friendly web applications.
+    I enjoy working across the entire workflow — turning ideas
+    into practical, well-engineered products.</p>
+  </div>
+  <div class="hero-btns fade-up">
+    <a href="#projects" class="btn-primary">VIEW PROJECTS →</a>
+    <a href="Ghattamaneni_Prudhvi_Resume.pdf" class="btn-ghost">RESUME</a>
+    <a href="#contact" class="btn-ghost">CONTACT</a>
+  </div>
+  <div class="scroll-hint">SCROLL DOWN</div>
+  <div class="hero-stats">
+    <div class="stat">
+      <span class="stat-num">3+</span>
+      <span class="stat-label">PROJECTS</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">8+</span>
+      <span class="stat-label">SKILLS</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="dark">
+  <h2 class="sec-title fade-up">About<span class="ul">_</span></h2>
+  <p class="fade-up">
+    I'm a <span class="about-highlight">Computer Science student</span> passionate about algorithms,
+    problem solving, and building real-world software systems. I enjoy working with
+    <span class="about-highlight">Java, Data Structures</span>, and Web Technologies —
+    turning well-defined problems into elegant, maintainable solutions.
+  </p>
+  <p class="fade-up" style="margin-top:20px;">
+    I approach every project with a focus on clean architecture, thoughtful design,
+    and practical delivery. Whether it's a high-performance algorithm or a full-stack
+    web app, I care about doing things right.
+  </p>
+</section>
+
+<!-- EXPERTISE -->
+<section id="expertise" class="grid-bg">
+  <h2 class="sec-title fade-up">Expertise<span class="ul">_</span></h2>
+  <p class="sec-desc fade-up">
+    I develop modern web applications and system solutions with a focus on clean design,
+    reliability, and practical implementation — spanning frontend, backend, web services,
+    and full integration workflows.
+  </p>
+  <div class="exp-grid fade-up">
+    <div class="exp-card">
+      <span class="exp-num">01</span>
+      <div class="exp-icon">⌨</div>
+      <h3>FRONTEND</h3>
+      <p>Building responsive and user-friendly interfaces using HTML, CSS, and JavaScript.
+        Focus on clean layouts, interaction design, and consistent experience across all devices.</p>
+    </div>
+    <div class="exp-card">
+      <span class="exp-num">02</span>
+      <div class="exp-icon">🗄</div>
+      <h3>BACKEND</h3>
+      <p>Backend systems with Node.js, strong knowledge in MySQL and database management.
+        Focus on data handling, server logic, and structured application flow.</p>
+    </div>
+    <div class="exp-card">
+      <span class="exp-num">03</span>
+      <div class="exp-icon">☁</div>
+      <h3>WEB SERVICES</h3>
+      <p>Working with AWS, migration processes, and construction of service workflows for
+        scalable and organized application support in cloud-based environments.</p>
+    </div>
+    <div class="exp-card">
+      <span class="exp-num">04</span>
+      <div class="exp-icon">⛓</div>
+      <h3>INTEGRATION</h3>
+      <p>Integration of frontend and backend modules into complete systems with proper data flow,
+        reliable communication, and deployment-ready structure.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="dark">
+  <h2 class="sec-title fade-up">Skills<span class="ul">_</span></h2>
+  <p class="sec-desc fade-up">The tools and languages I use to build things.</p>
+  <div class="skills-groups fade-up">
+    <div class="skill-group">
+      <h4>Languages</h4>
+      <div class="skill-pills">
+        <span class="pill">Java</span>
+        <span class="pill">Python</span>
+        <span class="pill">JavaScript</span>
+        <span class="pill">SQL</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h4>Frontend</h4>
+      <div class="skill-pills">
+        <span class="pill">HTML5</span>
+        <span class="pill">CSS3</span>
+        <span class="pill">JavaScript</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h4>Backend &amp; Data</h4>
+      <div class="skill-pills">
+        <span class="pill">Node.js</span>
+        <span class="pill">MySQL</span>
+        <span class="pill">DBMS</span>
+        <span class="pill">AWS</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h4>CS Fundamentals</h4>
+      <div class="skill-pills">
+        <span class="pill">Data Structures</span>
+        <span class="pill">Algorithms</span>
+        <span class="pill">OOPs</span>
+        <span class="pill">Git</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="grid-bg">
+  <h2 class="sec-title fade-up">Projects<span class="ul">_</span></h2>
+  <p class="sec-desc fade-up">A collection of things I've built.</p>
+  <div class="proj-grid fade-up">
+    <div class="proj-card">
+      <div class="proj-num">01</div>
+      <h3>Puzzle Forge AI Game</h3>
+      <p>The project focuses on implementing efficient algorithms such as BFS, Dijkstra, Greedy, and Dynamic Programming to solve 
+        puzzles optimally. It provides both user-driven gameplay and AI-assisted solutions, enabling comparison between human intuition and algorithmic efficiency.</p>
+      <div class="proj-tags">
+        <span class="proj-tag">Java</span>
+        <span class="proj-tag">Dijkstra</span>
+        <span class="proj-tag">DP</span>
+        <span class="proj-tag">AI</span>
+      </div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-num">02</div>
+      <h3>Train Ticket Booking System</h3>
+      <p>The Train Ticket Booking System is a console-based application developed using Python that simulates real-world railway reservation operations. It allows users to view available trains, book tickets, 
+        cancel bookings, and manage passenger records efficiently.</p>
+      <div class="proj-tags">
+        <span class="proj-tag">Python</span>
+        <span class="proj-tag">Json</span>
+        <span class="proj-tag">Csv</span>
+      </div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-num">03</div>
+      <h3>Amazon cart Saas</h3>
+      <p>A full-stack Amazon-style e-commerce application where users can register, browse products, 
+        add items to cart, and place orders.</p>
+      <div class="proj-tags">
+        <span class="proj-tag">Node.js</span>
+        <span class="proj-tag">Express</span>
+        <span class="proj-tag">Mysql</span>
+        <span class="proj-tag">Jwt</span>
+        <span class="proj-tag">Axios</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="dark">
+  <h2 class="sec-title fade-up">Contact<span class="ul">_</span></h2>
+  <div class="contact-wrap fade-up">
+    <div class="contact-info">
+      <h3>Have a project idea?<br>Let's talk.</h3>
+      <p>I'm always open to discussing new opportunities, collaborations,
+        or just a good conversation about code.</p>
+      <a class="contact-email" href="mailto:ghattamaneniprudhvi@email.com">ghattamaneniprudhvi@email.com</a>
+    </div>
+    <form class="c-form" onsubmit="sendMsg(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">SEND MESSAGE →</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Ghattamaneni Prudhvi — Built with intention.</p>
+  <div class="foot-links">
+    <a href="https://www.linkedin.com/in/ghattamaneni-prudhvi-03a197326/" target="_blank">LINKEDIN</a>
+    <a href="https://github.com/Prudhvi770" target="_blank">GITHUB</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
